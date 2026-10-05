@@ -23,6 +23,13 @@ pip install -e ".[api]"
 pip install -e ".[ui]"
 ```
 
+For quick source-tree testing, the runnable examples bootstrap `src/` themselves, so the project package does not need to be installed first (its third-party dependencies still need to exist in the environment):
+
+```bash
+python examples/basic.py
+python examples/basic_many.py
+```
+
 ## Configure a model
 
 Edit `config/models.yml`:
